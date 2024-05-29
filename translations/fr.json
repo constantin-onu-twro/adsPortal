@@ -1,0 +1,22 @@
+{
+  "welcome": "Bienvenue",
+  "post_ad": "Publier une annonce",
+  "profile": "Profil",
+  "logout": "Déconnexion",
+  "login": "Connexion",
+  "register": "S'inscrire",
+  "home": "Accueil",
+  "view_details": "Voir les détails",
+  "edit": "Modifier",
+  "delete": "Supprimer",
+  "description": "Description",
+  "title": "Titre",
+  "image": "Image",
+  "update": "Mettre à jour",
+  "online_users": "Utilisateurs en ligne",
+  "search": "Rechercher",
+  "location": "Emplacement",
+  "tags": "Tags",
+  "add_image": "Ajouter une image",
+  "remove_image": "Supprimer une image"
+}

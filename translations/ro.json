@@ -1,0 +1,22 @@
+{
+  "welcome": "Bine ai venit",
+  "post_ad": "Postează anunț",
+  "profile": "Profil",
+  "logout": "Deconectare",
+  "login": "Autentificare",
+  "register": "Înregistrare",
+  "home": "Acasă",
+  "view_details": "Vezi detalii",
+  "edit": "Editează",
+  "delete": "Șterge",
+  "description": "Descriere",
+  "title": "Titlu",
+  "image": "Imagine",
+  "update": "Actualizează",
+  "online_users": "Utilizatori Online",
+  "search": "Căutare",
+  "location": "Localizare",
+  "tags": "Etichete",
+  "add_image": "Adaugă Imagine",
+  "remove_image": "Șterge Imagine"
+}

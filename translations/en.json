@@ -1,0 +1,22 @@
+{
+  "welcome": "Welcome",
+  "post_ad": "Post Ad",
+  "profile": "Profile",
+  "logout": "Logout",
+  "login": "Login",
+  "register": "Register",
+  "home": "Home",
+  "view_details": "View Details",
+  "edit": "Edit",
+  "delete": "Delete",
+  "description": "Description",
+  "title": "Title",
+  "image": "Image",
+  "update": "Update",
+  "online_users": "Online Users",
+  "search": "Search",
+  "location": "Location",
+  "tags": "Tags",
+  "add_image": "Add Image",
+  "remove_image": "Remove Image"
+}
