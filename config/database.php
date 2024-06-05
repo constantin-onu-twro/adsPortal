@@ -5,6 +5,7 @@ class Database {
     private $pass = DB_PASS;
     private $dbname = DB_NAME;
     private $dbh;
+    private $stmt;
     private $error;
 
     public function __construct() {
@@ -22,8 +23,8 @@ class Database {
         }
     }
 
-    public function query($query) {
-        $this->stmt = $this->dbh->prepare($query);
+    public function query($sql) {
+        $this->stmt = $this->dbh->prepare($sql);
     }
 
     public function bind($param, $value, $type = null) {

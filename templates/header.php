@@ -11,6 +11,7 @@
         <nav>
             <ul>
                 <li><a href="index.php"><?php echo $translator->translate('home'); ?></a></li>
+                <li><a href="post_ad.php"><?php echo $translator->translate('post_add'); ?></a></li>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <li><a href="profile.php"><?php echo $translator->translate('profile'); ?></a></li>
                     <li><a href="logout.php"><?php echo $translator->translate('logout'); ?></a></li>

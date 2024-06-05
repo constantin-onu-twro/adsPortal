@@ -1,18 +1,17 @@
 <?php
-class Translation {
-    private $translations;
 
-    public function __construct($language = LANGUAGE) {
-        $this->loadTranslations($language);
+class Translation {
+    private $translations = [];
+
+    public function __construct() {
+        $this->loadTranslations();
     }
 
-    public function loadTranslations($language) {
-        $filePath = TRANSLATION_PATH . $language . '.json';
-        if (file_exists($filePath)) {
-            $jsonContent = file_get_contents($filePath);
-            $this->translations = json_decode($jsonContent, true);
-        } else {
-            $this->translations = [];
+    private function loadTranslations() {
+        $lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : 'en';
+        $file = __DIR__ . '/../translations/' . $lang . '.json';
+        if (file_exists($file)) {
+            $this->translations = json_decode(file_get_contents($file), true);
         }
     }
 
@@ -21,4 +20,3 @@ class Translation {
     }
 }
 ?>
-

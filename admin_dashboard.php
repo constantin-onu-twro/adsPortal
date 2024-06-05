@@ -1,29 +1,19 @@
-
 <?php
+session_start();
 require_once 'config/config.php';
-require_once 'classes/Admin.php';
+require_once 'classes/User.php';
 require_once 'classes/Translation.php';
 
-session_start();
-
-if (!isset($_SESSION['user_id'])) {
+// Check if the user is logged in and is an admin
+if (!isset($_SESSION['user_id']) || !$_SESSION['is_admin']) {
     header('Location: login.php');
     exit();
 }
 
-if ($_SESSION['is_admin'] != 1) {
-    header('Location: index.php');
-    exit();
-}
-
 $translator = new Translation();
-$admin = new Admin();
+$user = new User();
 
-$ads = $admin->getAllAds();
-$users = $admin->getAllUsers();
-$conversations = $admin->getAllConversations();
-
-include 'templates/header.php';
+include 'templates/admin_header.php';
 ?>
 
 <h2><?php echo $translator->translate('admin_dashboard'); ?></h2>

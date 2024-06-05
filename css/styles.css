@@ -1,1 +1,217 @@
-/* Styles for header, footer, navigation, etc. */
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #fafafa;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    display: inline-block;
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background: #1f2a30;
+}
+
+/* Tag Styling */
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Ad Images */
+.ad-images img {
+    max-width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional classes for specific elements */
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin-dashboard .panel {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard .panel h2 {
+    margin-bottom: 20px;
+}
+
+.admin-dashboard .panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-dashboard .panel ul li {
+    margin-bottom: 10px;
+}
+
+/* Messages */
+.message {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.message .content {
+    margin-left: 120px;
+}
+
+.message .content p {
+    margin: 0;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery .image {
+    position: relative;
+    max-width: 150px;
+}
+
+.gallery .image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery .image form {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+}
+
+.gallery .image form button {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery .image form button:hover {
+    background: #cc0000;
+}
+
+.gallery-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .admin-dashboard {
+        flex-direction: column;
+    }
+}

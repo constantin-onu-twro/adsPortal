@@ -1,4 +1,6 @@
 <?php
+require_once 'User.php';
+
 class Admin extends User {
     public function getAllAds() {
         $this->db->query('SELECT * FROM ads');

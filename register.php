@@ -2,6 +2,7 @@
 require_once 'config/config.php';
 require_once 'classes/User.php';
 require_once 'classes/Translation.php';
+require_once 'classes/Database.php';
 
 session_start();
 
