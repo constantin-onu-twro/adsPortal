@@ -67,7 +67,7 @@ include 'templates/header.php';
             <div id="current-images">
                 <?php foreach ($adData['images'] as $image): ?>
                     <div class="image-wrapper" data-image="<?php echo $image['image']; ?>">
-                        <img src="uploads/<?php echo htmlspecialchars($image['image']); ?>" alt="" class="current-image">
+                        <img src="uploads/ad_images<?php echo htmlspecialchars($image['image']); ?>" alt="" class="current-image">
                         <button type="button" class="btn btn-danger remove-image">Remove</button>
                         <button type="button" class="btn btn-info rotate-image">Rotate</button>
                     </div>

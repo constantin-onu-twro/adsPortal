@@ -86,7 +86,7 @@ class Ad {
         if (!empty($newImages['name'][0])) {
             foreach ($newImages['tmp_name'] as $index => $tmpName) {
                 $imageName = uniqid() . '-' . $newImages['name'][$index];
-                move_uploaded_file($tmpName, 'uploads/' . $imageName);
+                move_uploaded_file($tmpName, 'uploads/ad_images' . $imageName);
                 $this->db->query("INSERT INTO ad_images (ad_id, image) VALUES (:ad_id, :image)");
                 $this->db->bind(':ad_id', $id);
                 $this->db->bind(':image', $imageName);
@@ -102,7 +102,7 @@ class Ad {
                 $this->db->bind(':ad_id', $id);
                 $this->db->bind(':image', $image);
                 $this->db->execute();
-                unlink('uploads/' . $image);
+                unlink('uploads/ad_images' . $image);
             }
         }
 
@@ -110,7 +110,7 @@ class Ad {
         if (!empty($rotateImages)) {
             $rotateImagesArray = json_decode($rotateImages, true);
             foreach ($rotateImagesArray as $image) {
-                $filePath = 'uploads/' . $image;
+                $filePath = 'uploads/ad_images' . $image;
                 $source = imagecreatefromjpeg($filePath);
                 $rotate = imagerotate($source, 90, 0);
                 imagejpeg($rotate, $filePath);

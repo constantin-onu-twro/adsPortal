@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $images = [];
     if (!empty($_FILES['images']['name'][0])) {
-        $uploadDir = 'uploads/';
+        $uploadDir = 'uploads/ad_images';
         $allowedTypes = ['jpg', 'jpeg', 'png', 'gif'];
         
         foreach ($_FILES['images']['name'] as $key => $name) {

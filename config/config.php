@@ -6,4 +6,5 @@ define('DB_NAME', 'onu_classifieds');
 define('LANGUAGE', 'en');
 define('TRANSLATION_PATH', 'translations/');
 define('ONLINE_TIMEOUT', 600);
+define('BASE_URL', 'https://www.onu.ro/a0');
 ?>

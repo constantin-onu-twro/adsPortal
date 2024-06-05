@@ -30,7 +30,7 @@ include 'templates/header.php';
                 
                 <div class="gallery">
                     <?php foreach ($ad['images'] as $image): ?>
-                        <img width="100px" src="uploads/<?php echo htmlspecialchars($image['image']); ?>" alt="<?php echo htmlspecialchars($ad['title']); ?>" class="gallery-img">
+                        <img width="100px" src="uploads/ad_images<?php echo htmlspecialchars($image['image']); ?>" alt="<?php echo htmlspecialchars($ad['title']); ?>" class="gallery-img">
                     <?php endforeach; ?>
                 </div>
 

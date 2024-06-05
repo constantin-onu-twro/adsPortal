@@ -25,7 +25,7 @@ include 'templates/header.php';
     <div class="gallery">
         <?php foreach ($adDetails['images'] as $image): ?>
             <div class="image">
-                <img src="uploads/<?php echo htmlspecialchars($image['image']); ?>" alt="Ad Image">
+                <img src="uploads/ad_images<?php echo htmlspecialchars($image['image']); ?>" alt="Ad Image">
             </div>
         <?php endforeach; ?>
     </div>
